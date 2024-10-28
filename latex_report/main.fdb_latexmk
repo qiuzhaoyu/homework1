@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1730118547 "c:/Users/Zhaoyu Jimmy Qiu/Desktop/homework1/latex_report/main.tex" "main.pdf" "main" 1730118549
+["pdflatex"] 1730123406 "c:/Users/Zhaoyu Jimmy Qiu/Desktop/homework1/latex_report/main.tex" "main.pdf" "main" 1730123407
   "GUI.png" 1730114567 183956 cbdae98d495283d8f9b6c8531cf8b716 ""
   "ap=0.png" 1730116667 40371 15e9365297f3b7e18962ccb946427213 ""
   "ap=2.png" 1730116596 34859 79c1f602972e03f86be531a21068a897 ""
   "ap=4.png" 1730116463 31503 12be09c7c46835ddbf1e9cb8a796e5be ""
   "c:/Users/Zhaoyu" 1729853002 19009 c12365fdb285f81e9797bc4056b6ca41 ""
-  "c:/Users/Zhaoyu Jimmy Qiu/Desktop/homework1/latex_report/main.tex" 1730118547 10715 f81d4d7c14e061400075c9b09cf0dda0 ""
+  "c:/Users/Zhaoyu Jimmy Qiu/Desktop/homework1/latex_report/main.tex" 1730123405 10714 7271fd03d409df4aa96e295519cb3773 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1724306939 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1724305778 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1724305778 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -96,9 +96,9 @@
   "interp_2.png" 1730115893 304417 eb8df04aa14ee7e7beafcb29c7a8b663 ""
   "interp_4.png" 1730115921 326933 4f8ae791df23e671f054935193843a2f ""
   "light_field_matrix.png" 1730114567 37254680 0bc40b7adae551f96f194198670c9953 ""
-  "main.aux" 1730118549 5010 ca04d1ffe91f54200e501ab9a06e3def "pdflatex"
-  "main.out" 1730118549 2253 e30ac83345c1d8b0d7e668d4444bc760 "pdflatex"
-  "main.tex" 1730118547 10715 f81d4d7c14e061400075c9b09cf0dda0 ""
+  "main.aux" 1730123407 5010 ca04d1ffe91f54200e501ab9a06e3def "pdflatex"
+  "main.out" 1730123407 2253 e30ac83345c1d8b0d7e668d4444bc760 "pdflatex"
+  "main.tex" 1730123405 10714 7271fd03d409df4aa96e295519cb3773 ""
   "view1.png" 1730117698 44434 33c21096a160df91862ca472924c3d5d ""
   "view2.png" 1730117674 41779 cfe63e2081922a6a478191337e8eefb8 ""
   "view3.png" 1730117805 45549 fef725b09a9604f704368b90d8b3b4e9 ""

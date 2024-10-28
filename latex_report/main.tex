@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}  % For including images
 \usepackage{hyperref}  % For hyperlinks
+\usepackage{subcaption} % 用于子图
 
 \begin{document}
 
@@ -88,13 +89,31 @@ The user interface of this assignment consists of the components shown in the Fi
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.25\textwidth]{GUI.png} % 替换为你的图片路径
-    \caption{User Interface Overview}
+    \includegraphics[width=0.35\textwidth]{GUI.png} % 替换为你的图片路径
+    \caption{User interface overview}
     \label{fig:ui}
 \end{figure}
 
 \subsection{Interpolation Resampling}
+The comparison of results between bilinear interpolation and trilinear interpolation is shown in Figure \ref{fig:interpolation}. In the relatively undersampled lower-left corner, the effect of multiple interpolations is superior.
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{interp_2.png} % 替换为子图A的路径
+        \caption{Bilinear interpolation}
+        \label{fig:bilinear}
+    \end{subfigure}%
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{interp_4.png} % 替换为子图B的路径
+        \caption{Trilinear interpolation}
+        \label{fig:trilinear}
+    \end{subfigure}
+    \caption{Comparison of interpolation resampling}
+    \label{fig:interpolation}
+\end{figure}
 
 \subsection{Focal Plane Control}
 

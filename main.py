@@ -11,7 +11,7 @@ image_height, image_width = 240, 320  # 每张图像的分辨率
 
 # 初始化用于存储光场数据的 NumPy 数组
 light_field_images = np.zeros((num_rows, num_cols, image_height, image_width, 3), dtype=np.uint8)
-main_camera_position = [0, 0]  # 中心相机位置
+main_camera_position = [0.5, 0.5]  # 中心相机位置
 focal_length_factor = 1  # 焦距因子（模拟 z 轴）
 focus_distance = 30  # 焦距参数
 aperture_size = 1  # 光圈大小

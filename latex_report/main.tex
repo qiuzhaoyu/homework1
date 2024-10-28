@@ -3,6 +3,7 @@
 \usepackage{graphicx}  % For including images
 \usepackage{hyperref}  % For hyperlinks
 \usepackage{subcaption} % 用于子图
+\setlength{\parindent}{2em} % 设置全局首行缩进为 2em
 
 \begin{document}
 
@@ -12,7 +13,7 @@
 \maketitle
 
 \section{Introduction}
-The purpose of this assignment is to perform refocusing based on light field data and to experiment with different aperture effects. The input for this assignment is a 16x16 image matrix, referencing classic projects such as Lytro camera data processing.
+\indent The purpose of this assignment is to perform refocusing based on light field data and to experiment with different aperture effects. The input for this assignment is a 16x16 image matrix, referencing classic projects such as Lytro camera data processing.
 
 \section{Implement}
 
@@ -87,17 +88,50 @@ Here, \( (col, row) \) represents the position of the camera view, and \( (width
 \subsection{GUI interface}
 The user interface of this assignment consists of the components shown in the Figure \ref{fig:ui}, which includes 6 control sliders, 1 display page, and 1 confirm button.
 
-\begin{figure}[h]
+As shown in Figure~\ref{fig:view_control}, the different perspectives are controlled and visualized.
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.35\textwidth]{GUI.png} % 替换为你的图片路径
     \caption{User interface overview}
     \label{fig:ui}
 \end{figure}
 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.23\textwidth} % Top-left subfigure
+        \centering
+        \includegraphics[width=\textwidth]{view1.png} % Replace with your image
+        \caption{Top-left} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.23\textwidth} % Top-right subfigure
+        \centering
+        \includegraphics[width=\textwidth]{view2.png} % Replace with your image
+        \caption{Top-right} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.23\textwidth} % Bottom-left subfigure
+        \centering
+        \includegraphics[width=\textwidth]{view3.png} % Replace with your image
+        \caption{Bottom-left} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.23\textwidth} % Bottom-right subfigure
+        \centering
+        \includegraphics[width=\textwidth]{view4.png} % Replace with your image
+        \caption{Bottom-right} % Subfigure caption
+    \end{subfigure}
+    
+    \caption{Control of different perspectives: top-left, bottom-left, top-right, and bottom-right views.}
+    \label{fig:view_control}
+\end{figure}
+
+
 \subsection{Interpolation Resampling}
 The comparison of results between bilinear interpolation and trilinear interpolation is shown in Figure \ref{fig:interpolation}. In the relatively undersampled lower-left corner, the effect of multiple interpolations is superior.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \begin{subfigure}{0.35\textwidth}
         \centering
@@ -117,21 +151,106 @@ The comparison of results between bilinear interpolation and trilinear interpola
 
 \subsection{Focal Plane Control}
 
+As shown in Figure~\ref{fig:f}, the effect of increasing focal length is illustrated.
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth} % First subfigure occupying 32% of the width
+        \centering
+        \includegraphics[width=\textwidth]{f1.png} % Replace with your image
+        \caption{Focal length = 10} % Caption for the subfigure
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth} % Second subfigure
+        \centering
+        \includegraphics[width=\textwidth]{f12.png} % Replace with your image
+        \caption{Focal length = 34} % Caption for the subfigure
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth} % Third subfigure
+        \centering
+        \includegraphics[width=\textwidth]{f3.png} % Replace with your image
+        \caption{Focal length = 60} % Caption for the subfigure
+    \end{subfigure}
+    \caption{Effect of increasing focal length from small to large} % Overall figure caption
+    \label{fig:f}
+\end{figure}
+
+
 \subsection{Aperture Control}
+\begin{figure}[htbp]
+    \begin{subfigure}[b]{0.24\textwidth} % Fourth subfigure
+        \centering
+        \includegraphics[width=\textwidth]{ap=0.png} % Replace with your image
+        \caption{Aperture 1} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth} % Third subfigure
+        \centering
+        \includegraphics[width=\textwidth]{f12.png} % Replace with your image
+        \caption{Aperture 2} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth} % Second subfigure
+        \centering
+        \includegraphics[width=\textwidth]{ap=2.png} % Replace with your image
+        \caption{Aperture 3} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}[b]{0.24\textwidth} % First subfigure (25% of the width)
+        \centering
+        \includegraphics[width=\textwidth]{ap=4.png} % Replace with your image
+        \caption{Aperture 4} % Subfigure caption
+    \end{subfigure}
+
+    \caption{Effect of different aperture sizes} % Overall figure caption
+    \label{fig:aperture_example}
+\end{figure}
+
+As shown in Figure~\ref{fig:aperture_example}, the effect of different aperture sizes is illustrated.
 
 \subsection{Z-Axis Control}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.24\textwidth} % First subfigure
+        \centering
+        \includegraphics[width=\textwidth]{z=0.png} % Replace with your image
+        \caption{Z = 0} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth} % Second subfigure
+        \centering
+        \includegraphics[width=\textwidth]{ap=0.png} % Replace with your image
+        \caption{Z = 1} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth} % Third subfigure
+        \centering
+        \includegraphics[width=\textwidth]{z=12.png} % Replace with your image
+        \caption{Z = 12} % Subfigure caption
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth} % Fourth subfigure
+        \centering
+        \includegraphics[width=\textwidth]{z=15.png} % Replace with your image
+        \caption{Z = 15} % Subfigure caption
+    \end{subfigure}
+    
+    \caption{Process of increasing Z-axis from small to large values}
+    \label{fig:zaxis_example}
+\end{figure}
+
+As shown in Figure~\ref{fig:zaxis_example}, the Z-axis increases progressively in the illustrations.
+
 
 
 \section{Conclusion}
-This work presented a comprehensive overview of light field rendering, detailing the underlying principles and implementation techniques. The experiments highlighted the benefits of using advanced interpolation methods and the impact of camera parameters on rendering quality. Future work will explore more complex scenes and real-time rendering capabilities, further enhancing the interactive experience in light field visualization.
+This project implementation was inspired by two open-source projects: 
+\href{https://github.com/chiped/LightFieldRenderer}{Open-source Project 1} and 
+\href{https://github.com/TachikakaMin/Light_Field_Refocusing}{Open-source Project 2}.
 
-% If you have references, you can include them here:
-\begin{thebibliography}{9}
-    \bibitem{reference1} 
-    Author, A. (Year). 
-    \textit{Title of the paper}. Journal Name, Volume(Issue), Page range.
-    
-    % Add more references as needed
-\end{thebibliography}
+The final implementation achieved three main tasks: interpolation, view control, and focus control. 
+Since this is my first time handling light field data, I believe the aperture control and Z-axis control are not entirely correct. 
+I look forward to reviewing and learning from other students.
 
 \end{document}
